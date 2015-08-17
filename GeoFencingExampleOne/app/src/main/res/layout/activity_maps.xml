@@ -1,0 +1,78 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:orientation="vertical"
+
+    >
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="0dp">
+
+
+
+    <fragment
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        tools:context="com.materialdesign.mobibittech.geofencingexampleone.MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+</FrameLayout>
+
+    <LinearLayout
+
+        android:id="@+id/fencinglayout"
+
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <TextView
+            android:text="Add Place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/placeET"
+            android:hint="Add Place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <SeekBar
+            android:id="@+id/radiusPB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/add_fencingButton"
+            android:drawableRight="@drawable/ic_add"
+            android:text="Add Place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+       <!-- <Button
+
+            android:id="@+id/removeButton"
+            android:text="Remove All Fencing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+       -->
+
+        <TextView
+            android:id="@+id/addressTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
